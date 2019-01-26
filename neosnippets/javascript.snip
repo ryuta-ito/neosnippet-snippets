@@ -18,6 +18,18 @@ options head
     ${0:TARGET}
   }
 
+snippet afunction
+abbr    afunc
+options head
+  (${1:#:argument}) => {
+    ${0:TARGET}
+  }
+
+snippet afunction2
+abbr    afunc
+options head
+  (${1:#:argument}) => ${0:TARGET}
+
 snippet proto
 options head
   ${1:#:class_name}.prototype.${2:#:method_name} = function(${3:#:first_argument}) {
